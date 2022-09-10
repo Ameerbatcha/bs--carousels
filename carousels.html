@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>carousels</title>
+</head>
+
+<body>
+    <div class="px-5">
+        <!-- carousels-->
+        <div class="carousel slide" id="demo" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item ">
+                    <img src="./istanbul.jpg" class="d-block w-100" alt="istanbul img" >
+                    <div class="carousel-caption d-none d-md-block">
+                        <strong>Hagia sophia </strong> is one of the most famous structures in istanbul
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="./berlin.jpg" class="d-block w-100"  alt="berlin img" >
+                    <div class="carousel-caption d-none d-md-block"><strong>Berlin </strong> has many historic monuments
+                    </div>
+                </div>
+
+                <div class="carousel-item active">
+                    <img src="./cairo.jpg" class="d-block w-100" alt="berlin img" >
+                    <div class="carousel-caption d-none d-md-block"><strong>Al -Azhar mosque </strong> is one of the oldes moquse in cairo
+                        with legacies
+                    </div>
+                </div>
+
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev"> <span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+        </div>
+       </div>
+
+    <script>
+        $(function () {
+            $(`.carousel`).carousel({
+                interval: 2000
+            });
+        });
+    </script>
+
+</body>
+
+</html>
